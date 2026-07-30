@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKU Link Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔗 SKU Link Finder</h1>
+        <div class="subtitle">
+            Enter a SKU to get its product link &amp; copy it instantly.
+        </div>
+
+        <!-- ===== SEARCH ===== -->
+        <div class="search-box">
+            <input type="text" id="skuInput" placeholder="Enter SKU (e.g. KIT001)" spellcheck="false" autofocus />
+            <button id="searchBtn">🔍 Find Link</button>
+        </div>
+
+        <!-- ===== RESULT ===== -->
+        <div id="resultCard" class="result-card">
+            <div class="result-label">📌 Product Link</div>
+            <div class="result-link-wrapper">
+                <a id="resultLink" href="#" target="_blank">—</a>
+                <button id="copyBtn" class="copy-btn">📋 Copy</button>
+            </div>
+        </div>
+
+        <!-- ===== NOT FOUND ===== -->
+        <div id="notFound" class="not-found">
+            ❌ No link found for that SKU.
+        </div>
+
+        <div class="footer">
+            <span id="skuCount">📦 0 SKUs available</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
